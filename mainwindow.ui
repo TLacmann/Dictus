@@ -24,13 +24,13 @@
      </rect>
     </property>
     <property name="currentIndex">
-     <number>6</number>
+     <number>0</number>
     </property>
     <widget class="QWidget" name="Start">
      <attribute name="title">
       <string>Start</string>
      </attribute>
-     <widget class="QPushButton" name="pushButton_2">
+     <widget class="QPushButton" name="pBloadCours">
       <property name="geometry">
        <rect>
         <x>10</x>
@@ -43,7 +43,7 @@
        <string>Kurswahl Laden</string>
       </property>
      </widget>
-     <widget class="QPushButton" name="pushButton">
+     <widget class="QPushButton" name="pBUpdate">
       <property name="geometry">
        <rect>
         <x>10</x>
@@ -56,7 +56,7 @@
        <string>Updates Suchen</string>
       </property>
      </widget>
-     <widget class="QPushButton" name="pushButton_4">
+     <widget class="QPushButton" name="pBnewCoursSelection">
       <property name="geometry">
        <rect>
         <x>10</x>
@@ -69,7 +69,7 @@
        <string>Neue Kurswahl</string>
       </property>
      </widget>
-     <widget class="QPushButton" name="pushButton_5">
+     <widget class="QPushButton" name="pBHelp">
       <property name="geometry">
        <rect>
         <x>10</x>
