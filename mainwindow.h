@@ -3,7 +3,8 @@
 
 #include <QMainWindow>
 #include <QtXml/QXmlDefaultHandler>
-#include <QWebView>
+#include <QtWebKit/QtWebKit>
+#include <QtWidgets>
 
 namespace Ui {
 class MainWindow;

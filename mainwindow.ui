@@ -24,7 +24,7 @@
      </rect>
     </property>
     <property name="currentIndex">
-     <number>3</number>
+     <number>0</number>
     </property>
     <widget class="QWidget" name="Start">
      <attribute name="title">
@@ -711,11 +711,6 @@
         </rect>
        </property>
       </widget>
-      <zorder>comboBox_11</zorder>
-      <zorder>comboBox_12</zorder>
-      <zorder>comboBox_13</zorder>
-      <zorder>comboBox_14</zorder>
-      <zorder>groupBox_7</zorder>
      </widget>
      <widget class="QGroupBox" name="groupBox_7">
       <property name="geometry">
@@ -1145,16 +1140,6 @@
     <property name="title">
      <string>Derzeitige Kurswahl</string>
     </property>
-    <widget class="QColumnView" name="columnView">
-     <property name="geometry">
-      <rect>
-       <x>0</x>
-       <y>20</y>
-       <width>200</width>
-       <height>520</height>
-      </rect>
-     </property>
-    </widget>
    </widget>
   </widget>
   <widget class="QMenuBar" name="menuBar">
