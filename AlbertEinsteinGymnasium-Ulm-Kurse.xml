@@ -1,0 +1,79 @@
+<?xml version="1.0"?>
+
+<school>
+    <name>Albert-Einstein-Gymnasium</name>
+    <place>Ulm</place>
+    <streaks>
+        <streak avaiable="1">
+            <name>Naturwissenschaft und Technik</name>
+        </streak>
+        <streak avaiable="2">
+            <name>Spanisch</name>
+        </streak>
+        <streak avaiable="3">
+            <name>Latein</name>
+        </streak>
+    </streaks>
+</school>
+
+<languages>
+    <language avaiable="1">
+        <name>Englisch</name>
+    </language>
+    <language avaiable="2">
+        <name>Französisch</name>
+    </language>
+    <language avaiable="3">
+        <name>Spanisch</name>
+    </language>
+    <language avaiable="4">
+        <name>Latein</name>
+    </language>
+</languages>
+
+<mainSubjects>
+    <mainSubject avaiable="1">
+        <name>Deutsch</name>
+    </mainSubject>
+    <mainSubject avaiable="2">
+        <name>Mathematik</name>
+    </mainSubject>
+</mainSubjects>
+
+<science>
+    <scienceSubject avaiable="1">
+        <name>Physik</name>
+    </scienceSubject>
+
+    <scienceSubject avaiable="2">
+        <name>Chemie</name>
+    </scienceSubject>
+
+    <scienceSubject avaiable="3">
+        <name>Biologie</name>
+    </scienceSubject>
+</science>
+<reqSubjects>
+</reqSubjects>
+<optSubjects>
+    <optSubject aviavle="1">
+        <name>Literatur</name>
+        <houersPerWeek>2</houersPerWeek>
+        <terms>2</terms>
+    </optSubject>
+    <optSubject aviavle="2">
+        <name>Literatur und Theater</name>
+        <houersPerWeek>2</houersPerWeek>
+        <terms>4</terms>
+    </optSubject>
+    <optSubject aviavle="3">
+        <name>Pilosophie</name>
+        <houersPerWeek>2</houersPerWeek>
+        <terms>2</terms>
+    </optSubject>
+    <optSubject aviavle="4">
+        <name>Informatik</name>
+        <houersPerWeek>2</houersPerWeek>
+        <terms>4</terms>
+    </optSubject>
+</optSubjects>
