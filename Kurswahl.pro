@@ -13,11 +13,13 @@ TEMPLATE = app
 
 
 SOURCES += main.cpp\
-        mainwindow.cpp
+        mainwindow.cpp \
+    Classes/XML/schoolXML/coursesarrayread.cpp
 
-HEADERS  += mainwindow.h
+HEADERS  += mainwindow.h \
+    Classes/XML/schoolXML/coursesarrayread.h
 
 FORMS    += mainwindow.ui
 
 OTHER_FILES += \
-    AlbertEinsteinGymnasium-Ulm-Kurse.xml
+    AlbertEinsteinGymnasium-Ulm.xml

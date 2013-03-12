@@ -82,6 +82,26 @@
        <string>Hilfe</string>
       </property>
      </widget>
+     <widget class="QComboBox" name="cBSchool">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>250</y>
+        <width>580</width>
+        <height>27</height>
+       </rect>
+      </property>
+      <item>
+       <property name="text">
+        <string>Besuchte Schule</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>AlbertEinsteinGymnasium-Ulm</string>
+       </property>
+      </item>
+     </widget>
     </widget>
     <widget class="QWidget" name="pData">
      <attribute name="title">
