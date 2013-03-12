@@ -3,75 +3,85 @@
 <school>
     <name>Albert-Einstein-Gymnasium</name>
     <place>Ulm</place>
+
+    <countOfSub>12</countOfSub>
+
     <streaks>
-        <streak avaiable="1">
+        <count>3</count>
+        <streak id="1">
             <name>Naturwissenschaft und Technik</name>
         </streak>
-        <streak avaiable="2">
+        <streak id="2">
             <name>Spanisch</name>
         </streak>
-        <streak avaiable="3">
+        <streak id="3">
             <name>Latein</name>
         </streak>
     </streaks>
 </school>
 
 <languages>
-    <language avaiable="1">
+    <count>4</count>
+    <language id="1">
         <name>Englisch</name>
     </language>
-    <language avaiable="2">
+    <language id="2">
         <name>Französisch</name>
     </language>
-    <language avaiable="3">
+    <language id="3">
         <name>Spanisch</name>
     </language>
-    <language avaiable="4">
+    <language id="4">
         <name>Latein</name>
     </language>
 </languages>
 
 <mainSubjects>
-    <mainSubject avaiable="1">
+    <count>2</count>
+    <mainSubject id="1">
         <name>Deutsch</name>
     </mainSubject>
-    <mainSubject avaiable="2">
+    <mainSubject id="2">
         <name>Mathematik</name>
     </mainSubject>
 </mainSubjects>
 
 <science>
-    <scienceSubject avaiable="1">
+    <count>2</count>
+    <scienceSubject id="1">
         <name>Physik</name>
     </scienceSubject>
 
-    <scienceSubject avaiable="2">
+    <scienceSubject id="2">
         <name>Chemie</name>
     </scienceSubject>
 
-    <scienceSubject avaiable="3">
+    <scienceSubject id="3">
         <name>Biologie</name>
     </scienceSubject>
 </science>
+
 <reqSubjects>
 </reqSubjects>
+
 <optSubjects>
-    <optSubject aviavle="1">
+    <count>4</count>
+    <optSubject id="1">
         <name>Literatur</name>
         <houersPerWeek>2</houersPerWeek>
         <terms>2</terms>
     </optSubject>
-    <optSubject aviavle="2">
+    <optSubject id="2">
         <name>Literatur und Theater</name>
         <houersPerWeek>2</houersPerWeek>
         <terms>4</terms>
     </optSubject>
-    <optSubject aviavle="3">
+    <optSubject id="3">
         <name>Pilosophie</name>
         <houersPerWeek>2</houersPerWeek>
         <terms>2</terms>
     </optSubject>
-    <optSubject aviavle="4">
+    <optSubject id="4">
         <name>Informatik</name>
         <houersPerWeek>2</houersPerWeek>
         <terms>4</terms>
