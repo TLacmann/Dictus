@@ -4,7 +4,7 @@
 #
 #-------------------------------------------------
 
-QT       += core gui
+QT       += core gui xml
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -22,4 +22,6 @@ HEADERS  += mainwindow.h \
 FORMS    += mainwindow.ui
 
 OTHER_FILES += \
-    AlbertEinsteinGymnasium-Ulm.xml
+    XML/SaveData.xml \
+    XML/Albert-Einstein-Gymnasium-Ulm.xml \
+    Test.xml
