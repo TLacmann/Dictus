@@ -14,14 +14,28 @@ TEMPLATE = app
 
 SOURCES += main.cpp\
         mainwindow.cpp \
-    Classes/XML/schoolXML/coursesarrayread.cpp
+    schoolselectiondialoge.cpp \
+    Classes/ArrayReadinClasses/coursesarrayread.cpp \
+    Classes/ConfigurationClasses/configurationload.cpp \
+    Classes/SchoolLoadingClasses/schoolloadingclass.cpp \
+    Classes/SchoolLoadingClasses/downlodingschoolxml.cpp \
+    Classes/ArrayReadinClasses/hoursarrayread.cpp
 
 HEADERS  += mainwindow.h \
-    Classes/XML/schoolXML/coursesarrayread.h
+    Classes/XML/schoolXML/coursesarrayread.h \
+    schoolselectiondialoge.h \
+    Classes/configurationload.h \
+    Classes/ArrayReadinClasses/coursesarrayread.h \
+    Classes/ConfigurationClasses/configurationload.h \
+    Classes/SchoolLoadingClasses/schoolloadingclass.h \
+    Classes/SchoolLoadingClasses/downlodingschoolxml.h \
+    Classes/ArrayReadinClasses/hoursarrayread.h
 
-FORMS    += mainwindow.ui
+FORMS    += mainwindow.ui \
+    schoolselectiondialoge.ui
 
 OTHER_FILES += \
     XML/SaveData.xml \
     XML/Albert-Einstein-Gymnasium-Ulm.xml \
-    Test.xml
+    Test.xml \
+    XML/SchoolList.XML

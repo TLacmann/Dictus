@@ -1,6 +1,7 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 
+
 #include <string>
 #include <iostream>
 #include <QString>
@@ -25,26 +26,16 @@ MainWindow::MainWindow(QWidget *parent) :
 {
     ui->setupUi(this);
 
-//SaveData.XMl einlesen und grundlegende daten einlesen
-    QFile f("XML\SaveData.xml");
+    QString SchoolName;
+    boolean FirstOpening;
 
-    QDomDocument SaveData;
-
-    QString errorMsg;
-
-    int errorLine, errorColumn;
-
-/*    if ( doc.setContent( &f, &errorMsg, &errorLine, &errorColumn ) ) {
-
-      result = parseXMLwithDOM( SaveData );
-
-    }
-*/
+    //Aufrufen der Configurationload klasse mit Schulname als rückgabewert und Erstaufruf
+    myclass configurationload1 = new configurationload(this); //= new class configurationload;
+    configurationload(FirstOpening, SchoolName);
 
 
-    QString schoolname = "Albert-Einstein-Gymnasium-Ulm";
     QMessageBox selectedSchoolMSG;
-    selectedSchoolMSG.setText("Gewählte Schule:" + schoolname);
+    selectedSchoolMSG.setText("Gewählte Schule:" + SchoolName);
     selectedSchoolMSG.setInformativeText("Ist dies ihre Schule?");
     selectedSchoolMSG.setStandardButtons(QMessageBox::Yes | QMessageBox::No);
     selectedSchoolMSG.setDefaultButton(QMessageBox::Yes);
@@ -67,7 +58,7 @@ MainWindow::MainWindow(QWidget *parent) :
      }
 
 
-    QString XMLschoolFileName = schoolname + ".xml";
+    QString XMLschoolFileName = SchoolName + ".xml";
 
     /*
     QFile file (XMLschoolFile);

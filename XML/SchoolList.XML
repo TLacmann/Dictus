@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<countrys>
+
+    <country name="Deutschland">
+
+        <federalstaats>
+
+            <federalstaat name="Baden Württenberg">
+
+                <city name="Ulm">
+
+                    <school>Albert-Einstein-Gymnasium-Ulm</school>
+
+                </city>
+
+            </federalstaat>
+
+
+        </federalstaats>
+
+    </country>
+
+    <country name="Österreich">
+
+    </country>
+
+</countrys>
