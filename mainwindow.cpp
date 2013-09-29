@@ -2,7 +2,6 @@
 #include "ui_mainwindow.h"
 
 
-#include <string>
 #include <iostream>
 #include <QString>
 #include <QMessageBox>
@@ -27,11 +26,8 @@ MainWindow::MainWindow(QWidget *parent) :
     ui->setupUi(this);
 
     QString SchoolName;
-    boolean FirstOpening;
+    bool FirstOpening;
 
-    //Aufrufen der Configurationload klasse mit Schulname als rückgabewert und Erstaufruf
-    myclass configurationload1 = new configurationload(this); //= new class configurationload;
-    configurationload(FirstOpening, SchoolName);
 
 
     QMessageBox selectedSchoolMSG;

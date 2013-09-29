@@ -1,6 +1,9 @@
 #include "configurationload.h"
+#include <QFile>
+#include <QtXml>
+#include <QMessageBox>
 
-ConfigurationLoad::ConfigurationLoad(boolean, QString)
+ConfigurationLoad::ConfigurationLoad(bool firstOpening, QString schoolName)
 {
     //SaveData.XMl einlesen und grundlegende daten einlesen
         QFile file("XML\SaveData.xml");
