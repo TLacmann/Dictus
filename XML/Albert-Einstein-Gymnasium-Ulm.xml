@@ -6,18 +6,18 @@
 
     <countOfSub>12</countOfSub>
 
-    <streaks>
+    <profiles>
         <count>3</count>
-        <streak id="1">
+        <profile id="1">
             <name>Naturwissenschaft und Technik</name>
-        </streak>
-        <streak id="2">
+        </profile>
+        <profile id="2">
             <name>Spanisch</name>
-        </streak>
-        <streak id="3">
+        </profile>
+        <profile id="3">
             <name>Latein</name>
-        </streak>
-    </streaks>
+        </profile>
+    </profiles>
 </school>
 
 <languages>
