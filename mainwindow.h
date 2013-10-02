@@ -4,6 +4,8 @@
 #include <QMainWindow>
 #include <QtXml/QXmlDefaultHandler>
 #include <QtWebKit/QtWebKit>
+#include <QtWebKit/QWebElement>
+#include <QtWebKitWidgets/QWebPage>
 #include <QtWidgets>
 
 namespace Ui {

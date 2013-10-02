@@ -4,9 +4,9 @@
 #
 #-------------------------------------------------
 
-QT       += core gui xml
+QT       += core gui xml webkit
 
-greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
+greaterThan(QT_MAJOR_VERSION, 4): QT += widgets webkit
 
 TARGET = Kurswahl
 TEMPLATE = app
