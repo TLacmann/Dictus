@@ -11,10 +11,14 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>MainWindow</string>
+   <string>Dictus</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>Sonstige Daten/Icons/dictus.png</normaloff>Sonstige Daten/Icons/dictus.png</iconset>
   </property>
   <widget class="QWidget" name="centralWidget">
-   <widget class="QStackedWidget" name="stackedWidget">
+   <widget class="QStackedWidget" name="stackeWidgetMain">
     <property name="geometry">
      <rect>
       <x>0</x>
@@ -27,7 +31,7 @@
      <number>0</number>
     </property>
     <widget class="QWidget" name="MainPage">
-     <widget class="QGroupBox" name="groupBox_3">
+     <widget class="QGroupBox" name="gBNews">
       <property name="geometry">
        <rect>
         <x>600</x>
@@ -39,7 +43,7 @@
       <property name="title">
        <string>News</string>
       </property>
-      <widget class="QWebView" name="webView">
+      <widget class="QWebView" name="wVNews">
        <property name="geometry">
         <rect>
          <x>10</x>
@@ -50,7 +54,7 @@
        </property>
        <property name="url">
         <url>
-         <string>about:blank</string>
+         <string>https://google.com/</string>
         </url>
        </property>
       </widget>
@@ -68,7 +72,7 @@
        <string>Lizensbestimmungen</string>
       </property>
      </widget>
-     <widget class="QPushButton" name="pBHelp_3">
+     <widget class="QPushButton" name="pBLicenc">
       <property name="geometry">
        <rect>
         <x>10</x>
@@ -90,14 +94,12 @@
         <height>27</height>
        </rect>
       </property>
+      <property name="editable">
+       <bool>false</bool>
+      </property>
       <item>
        <property name="text">
         <string>Besuchte Schule</string>
-       </property>
-      </item>
-      <item>
-       <property name="text">
-        <string>AlbertEinsteinGymnasium-Ulm</string>
        </property>
       </item>
      </widget>
@@ -127,7 +129,7 @@
        <string>Hilfe</string>
       </property>
      </widget>
-     <widget class="QCommandLinkButton" name="commandLinkButton_12">
+     <widget class="QCommandLinkButton" name="pBCoursSelectionMain">
       <property name="geometry">
        <rect>
         <x>10</x>
@@ -137,10 +139,23 @@
        </rect>
       </property>
       <property name="text">
-       <string>CommandLinkButton</string>
+       <string>Kurswahl</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>Other/Icons/dictus512.ico</normaloff>Other/Icons/dictus512.ico</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>185</width>
+        <height>185</height>
+       </size>
+      </property>
+      <property name="description">
+       <string extracomment="Zur Kurswahl"/>
       </property>
      </widget>
-     <widget class="QCommandLinkButton" name="commandLinkButton_13">
+     <widget class="QCommandLinkButton" name="pBgradesOrganisationMain">
       <property name="geometry">
        <rect>
         <x>205</x>
@@ -152,8 +167,21 @@
       <property name="text">
        <string>CommandLinkButton</string>
       </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>Sonstige Daten/Icons/clipboard.png</normaloff>Sonstige Daten/Icons/clipboard.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>185</width>
+        <height>185</height>
+       </size>
+      </property>
+      <property name="description">
+       <string extracomment="Zur Notenverwaltung"/>
+      </property>
      </widget>
-     <widget class="QCommandLinkButton" name="commandLinkButton_14">
+     <widget class="QCommandLinkButton" name="pBsettingsMain">
       <property name="geometry">
        <rect>
         <x>400</x>
@@ -165,10 +193,36 @@
       <property name="text">
        <string>CommandLinkButton</string>
       </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>Sonstige Daten/Icons/gear.png</normaloff>Sonstige Daten/Icons/gear.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>185</width>
+        <height>185</height>
+       </size>
+      </property>
+      <property name="description">
+       <string extracomment="Zu den Einstellungen"/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pBselectSchool">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>470</y>
+        <width>580</width>
+        <height>50</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Schule ändern</string>
+      </property>
      </widget>
     </widget>
-    <widget class="QWidget" name="CcoursSelectionPage">
-     <widget class="QTabWidget" name="tabWidget">
+    <widget class="QWidget" name="CoursSelectionPage">
+     <widget class="QTabWidget" name="tWCoursSelection">
       <property name="geometry">
        <rect>
         <x>0</x>
@@ -211,7 +265,7 @@
         </property>
        </widget>
       </widget>
-      <widget class="QWidget" name="pData">
+      <widget class="QWidget" name="Data">
        <attribute name="title">
         <string>Persönliche Daten</string>
        </attribute>
@@ -318,7 +372,7 @@
          </datetime>
         </property>
        </widget>
-       <widget class="QLabel" name="label_6">
+       <widget class="QLabel" name="LBirthday">
         <property name="geometry">
          <rect>
           <x>10</x>
@@ -331,7 +385,7 @@
          <string>Geburtsdatum:</string>
         </property>
        </widget>
-       <widget class="QGroupBox" name="groupBox_2">
+       <widget class="QGroupBox" name="gBSubData">
         <property name="geometry">
          <rect>
           <x>0</x>
@@ -571,20 +625,7 @@
        <attribute name="title">
         <string>Kernfächer</string>
        </attribute>
-       <widget class="QPushButton" name="pushButton_8">
-        <property name="geometry">
-         <rect>
-          <x>600</x>
-          <y>430</y>
-          <width>111</width>
-          <height>41</height>
-         </rect>
-        </property>
-        <property name="text">
-         <string>Weiter</string>
-        </property>
-       </widget>
-       <widget class="QPushButton" name="pushButton_7">
+       <widget class="QPushButton" name="pBBack2">
         <property name="geometry">
          <rect>
           <x>10</x>
@@ -597,7 +638,7 @@
          <string>Zurück</string>
         </property>
        </widget>
-       <widget class="QPushButton" name="pushButton_17">
+       <widget class="QPushButton" name="pBForward2">
         <property name="geometry">
          <rect>
           <x>310</x>
@@ -610,7 +651,7 @@
          <string>Weiter</string>
         </property>
        </widget>
-       <widget class="QGroupBox" name="groupBox_4">
+       <widget class="QGroupBox" name="gBMainSub_2">
         <property name="geometry">
          <rect>
           <x>10</x>
@@ -622,7 +663,7 @@
         <property name="title">
          <string/>
         </property>
-        <widget class="QComboBox" name="comboBox_7">
+        <widget class="QComboBox" name="cBNatLan">
          <property name="geometry">
           <rect>
            <x>280</x>
@@ -632,7 +673,7 @@
           </rect>
          </property>
         </widget>
-        <widget class="QComboBox" name="comboBox_4">
+        <widget class="QComboBox" name="cBLanguages">
          <property name="geometry">
           <rect>
            <x>280</x>
@@ -642,7 +683,7 @@
           </rect>
          </property>
         </widget>
-        <widget class="QLabel" name="label">
+        <widget class="QLabel" name="LGerman">
          <property name="geometry">
           <rect>
            <x>0</x>
@@ -655,7 +696,7 @@
           <string>Deutsch</string>
          </property>
         </widget>
-        <widget class="QLabel" name="label_5">
+        <widget class="QLabel" name="L5Sub">
          <property name="geometry">
           <rect>
            <x>0</x>
@@ -668,7 +709,7 @@
           <string>5. Kernfach</string>
          </property>
         </widget>
-        <widget class="QLabel" name="label_4">
+        <widget class="QLabel" name="LNatLan">
          <property name="geometry">
           <rect>
            <x>0</x>
@@ -681,7 +722,7 @@
           <string>Naturwissenschaft / 2. Fremdsprache</string>
          </property>
         </widget>
-        <widget class="QLabel" name="label_2">
+        <widget class="QLabel" name="LMath">
          <property name="geometry">
           <rect>
            <x>0</x>
@@ -694,7 +735,7 @@
           <string>Mathematik</string>
          </property>
         </widget>
-        <widget class="QLabel" name="label_3">
+        <widget class="QLabel" name="LLanguages">
          <property name="geometry">
           <rect>
            <x>0</x>
@@ -707,7 +748,7 @@
           <string>Fremdsprache</string>
          </property>
         </widget>
-        <widget class="QComboBox" name="comboBox_3">
+        <widget class="QComboBox" name="cBGerman">
          <property name="geometry">
           <rect>
            <x>280</x>
@@ -722,7 +763,7 @@
           </property>
          </item>
         </widget>
-        <widget class="QComboBox" name="comboBox_5">
+        <widget class="QComboBox" name="cB5Sub">
          <property name="geometry">
           <rect>
            <x>280</x>
@@ -732,7 +773,7 @@
           </rect>
          </property>
         </widget>
-        <widget class="QComboBox" name="comboBox_6">
+        <widget class="QComboBox" name="cBMath">
          <property name="geometry">
           <rect>
            <x>280</x>
@@ -1333,7 +1374,7 @@
        </widget>
       </widget>
      </widget>
-     <widget class="QGroupBox" name="groupBox">
+     <widget class="QGroupBox" name="gBCoursSelectionMain">
       <property name="geometry">
        <rect>
         <x>610</x>

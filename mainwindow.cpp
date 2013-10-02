@@ -82,9 +82,28 @@ MainWindow::~MainWindow()
 
 void MainWindow::on_pBnewCoursSelection_clicked()
 {
-  //  MessageBox(HWND_DESKTOP,"Neue Kurswahl","Test",MB_OK)
-  //  QTabBar *Tab;
-  //  Tab->SelectRightTab;
-  //schoolxmlarraybuild(CoursesArray[]);
+  /*MessageBox(HWND_DESKTOP,"Neue Kurswahl","Test",MB_OK)
+  QTabBar *Tab;
+  Tab->SelectRightTab;
+  schoolxmlarraybuild(CoursesArray[]);
+  */
+
+}
+
+void MainWindow::on_pBUpdate_clicked()
+{
+
+}
+
+void MainWindow::on_pBHelp_clicked()
+{
+    newSchoolSelectionDialoge = new SchoolSelectionDialoge();
+    newSchoolSelectionDialoge->show();
+}
+
+void MainWindow::on_pBselectSchool_clicked()
+{
+    newSchoolSelectionDialoge = new SchoolSelectionDialoge();
+    newSchoolSelectionDialoge->show();
 
 }

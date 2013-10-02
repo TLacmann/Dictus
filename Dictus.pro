@@ -8,7 +8,7 @@ QT       += core gui xml webkitwidgets
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets webkitwidgets
 
-TARGET = Kurswahl
+TARGET = Dictus
 TEMPLATE = app
 
 
@@ -19,7 +19,7 @@ SOURCES += main.cpp\
     Classes/ConfigurationClasses/configurationload.cpp \
     Classes/SchoolLoadingClasses/schoolloadingclass.cpp \
     Classes/SchoolLoadingClasses/downlodingschoolxml.cpp \
-    Classes/ArrayReadinClasses/hoursarrayread.cpp
+    Classes/ArrayReadinClasses/hoursarrayread.cpp \
 
 HEADERS  += mainwindow.h \
     Classes/XML/schoolXML/coursesarrayread.h \
@@ -29,14 +29,18 @@ HEADERS  += mainwindow.h \
     Classes/ConfigurationClasses/configurationload.h \
     Classes/SchoolLoadingClasses/schoolloadingclass.h \
     Classes/SchoolLoadingClasses/downlodingschoolxml.h \
-    Classes/ArrayReadinClasses/hoursarrayread.h
+    Classes/ArrayReadinClasses/hoursarrayread.h \
 
 FORMS    += mainwindow.ui \
     schoolselectiondialoge.ui \
-    Help.ui
+    helpUi.ui
 
 OTHER_FILES += \
-    XML/SaveData.xml \
-    XML/Albert-Einstein-Gymnasium-Ulm.xml \
+    Other/Icons/dictus512.ico \
+    XML/Settings.xml \
+    XML/SchoolList.xml \
     XML/SaveSelection.xml \
-    XML/SchoolList.xml
+    XML/SaveData.xml \
+    XML/Albert-Einstein-Gymnasium-Ulm.xml
+
+RC_FILE = dictus.rc

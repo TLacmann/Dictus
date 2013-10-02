@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Dialog</string>
+   <string>Dictus - Schulauswahl</string>
   </property>
   <widget class="QDialogButtonBox" name="buttonBox">
    <property name="geometry">
