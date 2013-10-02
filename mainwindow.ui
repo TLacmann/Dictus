@@ -18,13 +18,13 @@
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>20</y>
+      <y>30</y>
       <width>600</width>
       <height>540</height>
      </rect>
     </property>
     <property name="currentIndex">
-     <number>0</number>
+     <number>1</number>
     </property>
     <widget class="QWidget" name="Start">
      <attribute name="title">
@@ -86,7 +86,7 @@
       <property name="geometry">
        <rect>
         <x>10</x>
-        <y>250</y>
+        <y>370</y>
         <width>580</width>
         <height>27</height>
        </rect>
@@ -102,12 +102,38 @@
        </property>
       </item>
      </widget>
+     <widget class="QPushButton" name="pBLicence">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>250</y>
+        <width>580</width>
+        <height>50</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Lizensbestimmungen</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pBHelp_3">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>310</y>
+        <width>580</width>
+        <height>50</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Datenschutz</string>
+      </property>
+     </widget>
     </widget>
     <widget class="QWidget" name="pData">
      <attribute name="title">
       <string>Persönliche Daten</string>
      </attribute>
-     <widget class="QPushButton" name="pushButton_3">
+     <widget class="QPushButton" name="pBBack1">
       <property name="geometry">
        <rect>
         <x>10</x>
@@ -120,7 +146,7 @@
        <string>Zurück</string>
       </property>
      </widget>
-     <widget class="QPushButton" name="pushButton_6">
+     <widget class="QPushButton" name="pBForward1">
       <property name="geometry">
        <rect>
         <x>310</x>
@@ -133,7 +159,7 @@
        <string>Weiter</string>
       </property>
      </widget>
-     <widget class="QLineEdit" name="lineEdit">
+     <widget class="QLineEdit" name="lEFirstName">
       <property name="geometry">
        <rect>
         <x>10</x>
@@ -146,7 +172,7 @@
        <string>Vorname</string>
       </property>
      </widget>
-     <widget class="QLineEdit" name="lineEdit_2">
+     <widget class="QLineEdit" name="lESecondName">
       <property name="geometry">
        <rect>
         <x>200</x>
@@ -159,12 +185,12 @@
        <string>2. Vorname</string>
       </property>
      </widget>
-     <widget class="QLineEdit" name="lineEdit_3">
+     <widget class="QLineEdit" name="lELastName">
       <property name="geometry">
        <rect>
         <x>390</x>
         <y>20</y>
-        <width>200</width>
+        <width>180</width>
         <height>27</height>
        </rect>
       </property>
@@ -172,7 +198,7 @@
        <string>Nachname</string>
       </property>
      </widget>
-     <widget class="QDateEdit" name="dateEdit">
+     <widget class="QDateEdit" name="dEBirthday">
       <property name="geometry">
        <rect>
         <x>10</x>
@@ -188,6 +214,26 @@
         <italic>true</italic>
         <bold>true</bold>
        </font>
+      </property>
+      <property name="dateTime">
+       <datetime>
+        <hour>0</hour>
+        <minute>0</minute>
+        <second>0</second>
+        <year>1990</year>
+        <month>1</month>
+        <day>1</day>
+       </datetime>
+      </property>
+      <property name="maximumDateTime">
+       <datetime>
+        <hour>23</hour>
+        <minute>59</minute>
+        <second>59</second>
+        <year>2100</year>
+        <month>12</month>
+        <day>31</day>
+       </datetime>
       </property>
      </widget>
      <widget class="QLabel" name="label_6">
@@ -206,86 +252,34 @@
      <widget class="QGroupBox" name="groupBox_2">
       <property name="geometry">
        <rect>
-        <x>10</x>
+        <x>0</x>
         <y>210</y>
-        <width>621</width>
+        <width>591</width>
         <height>231</height>
        </rect>
       </property>
       <property name="title">
-       <string>GroupBox</string>
+       <string>Besuchte Fächer</string>
       </property>
-      <widget class="QGroupBox" name="groupBox_3">
+      <widget class="QGroupBox" name="gBLanguages">
        <property name="geometry">
         <rect>
          <x>10</x>
-         <y>100</y>
-         <width>111</width>
-         <height>91</height>
+         <y>70</y>
+         <width>181</width>
+         <height>151</height>
         </rect>
        </property>
        <property name="title">
-        <string>GroupBox</string>
+        <string>Sprachen</string>
        </property>
-       <widget class="QCheckBox" name="checkBox">
-        <property name="geometry">
-         <rect>
-          <x>10</x>
-          <y>20</y>
-          <width>97</width>
-          <height>22</height>
-         </rect>
-        </property>
-        <property name="text">
-         <string>Englisch</string>
-        </property>
-       </widget>
-       <widget class="QCheckBox" name="checkBox_3">
-        <property name="geometry">
-         <rect>
-          <x>10</x>
-          <y>50</y>
-          <width>97</width>
-          <height>22</height>
-         </rect>
-        </property>
-        <property name="text">
-         <string>Latein</string>
-        </property>
-       </widget>
-       <widget class="QCheckBox" name="checkBox_2">
-        <property name="geometry">
-         <rect>
-          <x>10</x>
-          <y>35</y>
-          <width>111</width>
-          <height>22</height>
-         </rect>
-        </property>
-        <property name="text">
-         <string>Französisch</string>
-        </property>
-       </widget>
-       <widget class="QCheckBox" name="checkBox_4">
-        <property name="geometry">
-         <rect>
-          <x>10</x>
-          <y>65</y>
-          <width>97</width>
-          <height>22</height>
-         </rect>
-        </property>
-        <property name="text">
-         <string>Spanisch</string>
-        </property>
-       </widget>
       </widget>
-      <widget class="QComboBox" name="comboBox_2">
+      <widget class="QComboBox" name="cBVisitedReligion">
        <property name="geometry">
         <rect>
-         <x>10</x>
+         <x>200</x>
          <y>30</y>
-         <width>200</width>
+         <width>180</width>
          <height>27</height>
         </rect>
        </property>
@@ -310,13 +304,13 @@
         </property>
        </item>
       </widget>
-      <widget class="QComboBox" name="comboBox">
+      <widget class="QComboBox" name="cBProfile">
        <property name="geometry">
         <rect>
-         <x>10</x>
-         <y>70</y>
-         <width>200</width>
-         <height>31</height>
+         <x>400</x>
+         <y>30</y>
+         <width>180</width>
+         <height>27</height>
         </rect>
        </property>
        <property name="baseSize">
@@ -346,11 +340,11 @@
         </property>
        </item>
       </widget>
-      <widget class="QCheckBox" name="checkBox_5">
+      <widget class="QCheckBox" name="cBSports">
        <property name="geometry">
         <rect>
-         <x>10</x>
-         <y>200</y>
+         <x>220</x>
+         <y>80</y>
          <width>351</width>
          <height>20</height>
         </rect>
@@ -359,18 +353,21 @@
         <string>keine Teilnahme am Sportunterricht in J1/J2</string>
        </property>
       </widget>
-      <widget class="QComboBox" name="comboBox_10">
+      <widget class="QLineEdit" name="lEConfession">
        <property name="geometry">
         <rect>
-         <x>220</x>
+         <x>10</x>
          <y>30</y>
-         <width>200</width>
+         <width>180</width>
          <height>27</height>
         </rect>
        </property>
+       <property name="text">
+        <string>Konfession</string>
+       </property>
       </widget>
      </widget>
-     <widget class="QLineEdit" name="lineEdit_4">
+     <widget class="QLineEdit" name="lEBirthlocation">
       <property name="geometry">
        <rect>
         <x>200</x>
@@ -379,8 +376,11 @@
         <height>27</height>
        </rect>
       </property>
+      <property name="text">
+       <string>Geburtsort</string>
+      </property>
      </widget>
-     <widget class="QLineEdit" name="lineEdit_6">
+     <widget class="QLineEdit" name="lEStreet">
       <property name="geometry">
        <rect>
         <x>10</x>
@@ -389,8 +389,11 @@
         <height>27</height>
        </rect>
       </property>
+      <property name="text">
+       <string>Straße</string>
+      </property>
      </widget>
-     <widget class="QLineEdit" name="lineEdit_7">
+     <widget class="QLineEdit" name="lEPlace">
       <property name="geometry">
        <rect>
         <x>280</x>
@@ -399,8 +402,11 @@
         <height>27</height>
        </rect>
       </property>
+      <property name="text">
+       <string>Ort</string>
+      </property>
      </widget>
-     <widget class="QLineEdit" name="lineEdit_8">
+     <widget class="QLineEdit" name="lEPLZ">
       <property name="geometry">
        <rect>
         <x>200</x>
@@ -409,8 +415,11 @@
         <height>27</height>
        </rect>
       </property>
+      <property name="text">
+       <string>PLZ</string>
+      </property>
      </widget>
-     <widget class="QLineEdit" name="lineEdit_5">
+     <widget class="QLineEdit" name="lEPhonenumber">
       <property name="geometry">
        <rect>
         <x>10</x>
@@ -419,6 +428,61 @@
         <height>27</height>
        </rect>
       </property>
+      <property name="text">
+       <string>Telephonnummer</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lEEMailadress">
+      <property name="geometry">
+       <rect>
+        <x>200</x>
+        <y>170</y>
+        <width>180</width>
+        <height>27</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>E-Mailadresse</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="cBSex">
+      <property name="geometry">
+       <rect>
+        <x>390</x>
+        <y>90</y>
+        <width>180</width>
+        <height>27</height>
+       </rect>
+      </property>
+      <property name="baseSize">
+       <size>
+        <width>0</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="currentText">
+       <string notr="true">Geschlecht</string>
+      </property>
+      <item>
+       <property name="text">
+        <string>Geschlecht</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Mänlich</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Weiblich</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Anderes</string>
+       </property>
+      </item>
      </widget>
     </widget>
     <widget class="QWidget" name="mainSubjects">
@@ -474,7 +538,7 @@
        </rect>
       </property>
       <property name="title">
-       <string>GroupBox</string>
+       <string/>
       </property>
       <widget class="QComboBox" name="comboBox_7">
        <property name="geometry">
@@ -868,7 +932,7 @@
        <rect>
         <x>0</x>
         <y>10</y>
-        <width>601</width>
+        <width>591</width>
         <height>211</height>
        </rect>
       </property>
@@ -935,70 +999,83 @@
         </property>
        </item>
       </widget>
-      <widget class="QCheckBox" name="checkBox_6">
+      <widget class="QGroupBox" name="groupBox_18">
        <property name="geometry">
         <rect>
-         <x>400</x>
-         <y>20</y>
-         <width>70</width>
-         <height>17</height>
+         <x>300</x>
+         <y>10</y>
+         <width>281</width>
+         <height>201</height>
         </rect>
        </property>
-       <property name="text">
-        <string>CheckBox</string>
+       <property name="title">
+        <string>Als schriftliches Abitur wählen</string>
        </property>
-      </widget>
-      <widget class="QCheckBox" name="checkBox_7">
-       <property name="geometry">
-        <rect>
-         <x>400</x>
-         <y>60</y>
-         <width>70</width>
-         <height>17</height>
-        </rect>
-       </property>
-       <property name="text">
-        <string>CheckBox</string>
-       </property>
-      </widget>
-      <widget class="QCheckBox" name="checkBox_8">
-       <property name="geometry">
-        <rect>
-         <x>400</x>
-         <y>100</y>
-         <width>70</width>
-         <height>17</height>
-        </rect>
-       </property>
-       <property name="text">
-        <string>CheckBox</string>
-       </property>
-      </widget>
-      <widget class="QCheckBox" name="checkBox_9">
-       <property name="geometry">
-        <rect>
-         <x>400</x>
-         <y>140</y>
-         <width>70</width>
-         <height>17</height>
-        </rect>
-       </property>
-       <property name="text">
-        <string>CheckBox</string>
-       </property>
-      </widget>
-      <widget class="QCheckBox" name="checkBox_10">
-       <property name="geometry">
-        <rect>
-         <x>400</x>
-         <y>180</y>
-         <width>70</width>
-         <height>17</height>
-        </rect>
-       </property>
-       <property name="text">
-        <string>CheckBox</string>
-       </property>
+       <widget class="QCheckBox" name="checkBox_6">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>20</y>
+          <width>70</width>
+          <height>17</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QCheckBox" name="checkBox_7">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>60</y>
+          <width>70</width>
+          <height>17</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QCheckBox" name="checkBox_8">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>100</y>
+          <width>70</width>
+          <height>17</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QCheckBox" name="checkBox_9">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>140</y>
+          <width>70</width>
+          <height>17</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QCheckBox" name="checkBox_10">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>180</y>
+          <width>70</width>
+          <height>17</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
       </widget>
      </widget>
      <widget class="QGroupBox" name="groupBox_9">
@@ -1047,12 +1124,12 @@
        <rect>
         <x>310</x>
         <y>450</y>
-        <width>275</width>
+        <width>125</width>
         <height>54</height>
        </rect>
       </property>
       <property name="text">
-       <string>Kurswahl Speichern</string>
+       <string>Kurswahl drucken</string>
       </property>
      </widget>
      <widget class="QPushButton" name="pushButton_16">
@@ -1060,7 +1137,7 @@
        <rect>
         <x>10</x>
         <y>450</y>
-        <width>275</width>
+        <width>125</width>
         <height>54</height>
        </rect>
       </property>
@@ -1146,6 +1223,32 @@
        <string>Wahlfächer</string>
       </property>
      </widget>
+     <widget class="QPushButton" name="pushButton_22">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>450</y>
+        <width>125</width>
+        <height>54</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Kurswahl speichern</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_23">
+      <property name="geometry">
+       <rect>
+        <x>460</x>
+        <y>450</y>
+        <width>125</width>
+        <height>54</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Kurswahl senden</string>
+      </property>
+     </widget>
     </widget>
    </widget>
    <widget class="QGroupBox" name="groupBox">
@@ -1160,7 +1263,7 @@
     <property name="title">
      <string>Derzeitige Kurswahl</string>
     </property>
-    <widget class="QGroupBox" name="groupBox_16">
+    <widget class="QGroupBox" name="gBCourses">
      <property name="geometry">
       <rect>
        <x>10</x>
@@ -1170,10 +1273,10 @@
       </rect>
      </property>
      <property name="title">
-      <string>GroupBox</string>
+      <string>Kurse</string>
      </property>
     </widget>
-    <widget class="QGroupBox" name="groupBox_17">
+    <widget class="QGroupBox" name="gBHouers">
      <property name="geometry">
       <rect>
        <x>10</x>
@@ -1183,23 +1286,10 @@
       </rect>
      </property>
      <property name="title">
-      <string>GroupBox</string>
+      <string>Stunden</string>
      </property>
-     <widget class="QGroupBox" name="groupBox_18">
-      <property name="geometry">
-       <rect>
-        <x>0</x>
-        <y>0</y>
-        <width>181</width>
-        <height>101</height>
-       </rect>
-      </property>
-      <property name="title">
-       <string>GroupBox</string>
-      </property>
-     </widget>
     </widget>
-    <widget class="QGroupBox" name="groupBox_19">
+    <widget class="QGroupBox" name="gBMainSub">
      <property name="geometry">
       <rect>
        <x>10</x>
@@ -1209,10 +1299,10 @@
       </rect>
      </property>
      <property name="title">
-      <string>GroupBox</string>
+      <string>Kernfächer</string>
      </property>
     </widget>
-    <widget class="QGroupBox" name="groupBox_20">
+    <widget class="QGroupBox" name="gBSlectedSub">
      <property name="geometry">
       <rect>
        <x>10</x>
@@ -1222,7 +1312,7 @@
       </rect>
      </property>
      <property name="title">
-      <string>GroupBox</string>
+      <string>Wahlfächer</string>
      </property>
     </widget>
    </widget>
@@ -1236,6 +1326,12 @@
      <height>21</height>
     </rect>
    </property>
+   <widget class="QMenu" name="menuKurswahlprogramm_2013">
+    <property name="title">
+     <string>Kurswahlprogramm 2013</string>
+    </property>
+   </widget>
+   <addaction name="menuKurswahlprogramm_2013"/>
   </widget>
   <widget class="QToolBar" name="mainToolBar">
    <attribute name="toolBarArea">

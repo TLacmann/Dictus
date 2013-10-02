@@ -32,10 +32,11 @@ HEADERS  += mainwindow.h \
     Classes/ArrayReadinClasses/hoursarrayread.h
 
 FORMS    += mainwindow.ui \
-    schoolselectiondialoge.ui
+    schoolselectiondialoge.ui \
+    Help.ui
 
 OTHER_FILES += \
     XML/SaveData.xml \
     XML/Albert-Einstein-Gymnasium-Ulm.xml \
-    Test.xml \
-    XML/SchoolList.XML
+    XML/SaveSelection.xml \
+    XML/SchoolList.xml
