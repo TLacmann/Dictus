@@ -43,4 +43,7 @@ OTHER_FILES += \
     XML/SaveData.xml \
     XML/Albert-Einstein-Gymnasium-Ulm.xml
 
-RC_FILE = dictus.rc
+RC_FILE = dict.qrc
+
+RESOURCES += \
+    dict.qrc

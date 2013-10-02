@@ -1,0 +1,27 @@
+<RCC>
+    <qresource prefix="/new/prefix1">
+        <file>Other/Icons/arrow.png</file>
+        <file>Other/Icons/calendar.png</file>
+        <file>Other/Icons/certificate.png</file>
+        <file>Other/Icons/clipboard.png</file>
+        <file>Other/Icons/dictus.ico</file>
+        <file>Other/Icons/dictus.png</file>
+        <file>Other/Icons/dictus512.ico</file>
+        <file>Other/Icons/dictus512.png</file>
+        <file>Other/Icons/document.png</file>
+        <file>Other/Icons/floppy_back.png</file>
+        <file>Other/Icons/floppy_front.png</file>
+        <file>Other/Icons/gear.png</file>
+        <file>Other/Icons/H.png</file>
+        <file>Other/Icons/key.png</file>
+        <file>Other/Icons/lense.png</file>
+        <file>Other/Icons/loading.png</file>
+        <file>Other/Icons/lock_closed.png</file>
+        <file>Other/Icons/lock_open.png</file>
+        <file>Other/Icons/organizer.png</file>
+        <file>Other/Icons/save.png</file>
+        <file>Other/Icons/symbols.zip</file>
+        <file>Other/Icons/table_add.png</file>
+        <file>Other/Icons/tool.png</file>
+    </qresource>
+</RCC>

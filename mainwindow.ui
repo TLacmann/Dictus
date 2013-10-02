@@ -17,6 +17,12 @@
    <iconset>
     <normaloff>Sonstige Daten/Icons/dictus.png</normaloff>Sonstige Daten/Icons/dictus.png</iconset>
   </property>
+  <property name="toolButtonStyle">
+   <enum>Qt::ToolButtonTextUnderIcon</enum>
+  </property>
+  <property name="documentMode">
+   <bool>false</bool>
+  </property>
   <widget class="QWidget" name="centralWidget">
    <widget class="QStackedWidget" name="stackeWidgetMain">
     <property name="geometry">
@@ -54,7 +60,7 @@
        </property>
        <property name="url">
         <url>
-         <string>https://google.com/</string>
+         <string>https://www.google.de/?gws_rd=cr&amp;ei=f4dMUrS7CsXGswbelIHoCQ</string>
         </url>
        </property>
       </widget>
@@ -129,84 +135,6 @@
        <string>Hilfe</string>
       </property>
      </widget>
-     <widget class="QCommandLinkButton" name="pBCoursSelectionMain">
-      <property name="geometry">
-       <rect>
-        <x>10</x>
-        <y>0</y>
-        <width>185</width>
-        <height>185</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>Kurswahl</string>
-      </property>
-      <property name="icon">
-       <iconset>
-        <normaloff>Other/Icons/dictus512.ico</normaloff>Other/Icons/dictus512.ico</iconset>
-      </property>
-      <property name="iconSize">
-       <size>
-        <width>185</width>
-        <height>185</height>
-       </size>
-      </property>
-      <property name="description">
-       <string extracomment="Zur Kurswahl"/>
-      </property>
-     </widget>
-     <widget class="QCommandLinkButton" name="pBgradesOrganisationMain">
-      <property name="geometry">
-       <rect>
-        <x>205</x>
-        <y>0</y>
-        <width>185</width>
-        <height>185</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>CommandLinkButton</string>
-      </property>
-      <property name="icon">
-       <iconset>
-        <normaloff>Sonstige Daten/Icons/clipboard.png</normaloff>Sonstige Daten/Icons/clipboard.png</iconset>
-      </property>
-      <property name="iconSize">
-       <size>
-        <width>185</width>
-        <height>185</height>
-       </size>
-      </property>
-      <property name="description">
-       <string extracomment="Zur Notenverwaltung"/>
-      </property>
-     </widget>
-     <widget class="QCommandLinkButton" name="pBsettingsMain">
-      <property name="geometry">
-       <rect>
-        <x>400</x>
-        <y>0</y>
-        <width>185</width>
-        <height>185</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>CommandLinkButton</string>
-      </property>
-      <property name="icon">
-       <iconset>
-        <normaloff>Sonstige Daten/Icons/gear.png</normaloff>Sonstige Daten/Icons/gear.png</iconset>
-      </property>
-      <property name="iconSize">
-       <size>
-        <width>185</width>
-        <height>185</height>
-       </size>
-      </property>
-      <property name="description">
-       <string extracomment="Zu den Einstellungen"/>
-      </property>
-     </widget>
      <widget class="QPushButton" name="pBselectSchool">
       <property name="geometry">
        <rect>
@@ -218,6 +146,135 @@
       </property>
       <property name="text">
        <string>Schule ändern</string>
+      </property>
+     </widget>
+     <widget class="QToolButton" name="toolButton">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>0</y>
+        <width>185</width>
+        <height>185</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>185</width>
+        <height>185</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Kurswahl</string>
+      </property>
+      <property name="icon">
+       <iconset resource="dict.qrc">
+        <normaloff>:/new/prefix1/Other/Icons/clipboard.png</normaloff>:/new/prefix1/Other/Icons/clipboard.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>155</width>
+        <height>155</height>
+       </size>
+      </property>
+      <property name="toolButtonStyle">
+       <enum>Qt::ToolButtonTextUnderIcon</enum>
+      </property>
+     </widget>
+     <widget class="QToolButton" name="toolButton_2">
+      <property name="geometry">
+       <rect>
+        <x>205</x>
+        <y>0</y>
+        <width>185</width>
+        <height>185</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>185</width>
+        <height>185</height>
+       </size>
+      </property>
+      <property name="sizeIncrement">
+       <size>
+        <width>185</width>
+        <height>185</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Notenverwaltung</string>
+      </property>
+      <property name="icon">
+       <iconset resource="dict.qrc">
+        <normaloff>:/new/prefix1/Other/Icons/organizer.png</normaloff>:/new/prefix1/Other/Icons/organizer.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>155</width>
+        <height>155</height>
+       </size>
+      </property>
+      <property name="toolButtonStyle">
+       <enum>Qt::ToolButtonTextUnderIcon</enum>
+      </property>
+     </widget>
+     <widget class="QToolButton" name="toolButton_3">
+      <property name="geometry">
+       <rect>
+        <x>400</x>
+        <y>0</y>
+        <width>185</width>
+        <height>185</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>185</width>
+        <height>185</height>
+       </size>
+      </property>
+      <property name="sizeIncrement">
+       <size>
+        <width>0</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Einstellungen</string>
+      </property>
+      <property name="icon">
+       <iconset resource="dict.qrc">
+        <normaloff>:/new/prefix1/Other/Icons/gear.png</normaloff>:/new/prefix1/Other/Icons/gear.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>155</width>
+        <height>155</height>
+       </size>
+      </property>
+      <property name="toolButtonStyle">
+       <enum>Qt::ToolButtonTextUnderIcon</enum>
       </property>
      </widget>
     </widget>
@@ -1644,6 +1701,8 @@
    <header>QtWebKitWidgets/QWebView</header>
   </customwidget>
  </customwidgets>
- <resources/>
+ <resources>
+  <include location="dict.qrc"/>
+ </resources>
  <connections/>
 </ui>
