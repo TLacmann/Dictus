@@ -2,4 +2,5 @@
 
 SchoolLoadingClass::SchoolLoadingClass()
 {
+
 }

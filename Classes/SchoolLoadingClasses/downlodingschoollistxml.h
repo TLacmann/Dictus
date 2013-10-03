@@ -1,5 +1,5 @@
-#ifndef DOWNLODINGSCHOOLXML_H
-#define DOWNLODINGSCHOOLXML_H
+#ifndef DOWNLODINGSCHOOLLISTXML_H
+#define DOWNLODINGSCHOOLLISTXML_H
 
 #include <QObject>
 #include <QByteArray>
@@ -7,14 +7,13 @@
 #include <QNetworkRequest>
 #include <QNetworkReply>
 
-class DownlodingSchoolXML : public QObject
+class downlodingSchoolListXml : public QObject
 {
-
     Q_OBJECT
     public:
-        explicit DownlodingSchoolXML(QUrl fileUrl, QObject *parent = 0);
+        explicit downlodingSchoolListXml(QUrl fileUrl, QObject *parent = 0);
 
-        virtual ~DownlodingSchoolXML();
+        virtual ~downlodingSchoolListXml();
 
         QByteArray downloadedData() const;
 
@@ -33,8 +32,8 @@ private:
 
 
 public:
-    DownlodingSchoolXML();
+    downlodingSchoolListXml();
+
 };
 
-#endif // DOWNLODINGSCHOOLXML_H
-
+#endif // DOWNLODINGSCHOOLLISTXML_H

@@ -4,7 +4,7 @@
 #
 #-------------------------------------------------
 
-QT       += core gui xml webkitwidgets
+QT       += core gui xml webkitwidgets network
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets webkitwidgets
 
@@ -20,6 +20,7 @@ SOURCES += main.cpp\
     Classes/SchoolLoadingClasses/schoolloadingclass.cpp \
     Classes/SchoolLoadingClasses/downlodingschoolxml.cpp \
     Classes/ArrayReadinClasses/hoursarrayread.cpp \
+    Classes/SchoolLoadingClasses/downlodingschoollistxml.cpp
 
 HEADERS  += mainwindow.h \
     Classes/XML/schoolXML/coursesarrayread.h \
@@ -30,6 +31,7 @@ HEADERS  += mainwindow.h \
     Classes/SchoolLoadingClasses/schoolloadingclass.h \
     Classes/SchoolLoadingClasses/downlodingschoolxml.h \
     Classes/ArrayReadinClasses/hoursarrayread.h \
+    Classes/SchoolLoadingClasses/downlodingschoollistxml.h
 
 FORMS    += mainwindow.ui \
     schoolselectiondialoge.ui \
@@ -41,9 +43,7 @@ OTHER_FILES += \
     XML/SchoolList.xml \
     XML/SaveSelection.xml \
     XML/SaveData.xml \
-    XML/Albert-Einstein-Gymnasium-Ulm.xml
+    XML/Albert-Einstein-Gymnasium-Ulm.xml \
+    XML/Version.xml
 
-RC_FILE = dict.qrc
-
-RESOURCES += \
-    dict.qrc
+RC_FILE = icons.qrc

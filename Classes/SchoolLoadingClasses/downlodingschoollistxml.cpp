@@ -1,4 +1,4 @@
-#include "downlodingschoolxml.h"
+#include "downlodingschoollistxml.h"
 #include <QString>
 #include <QtNetwork>
 #include <QObject>
@@ -7,7 +7,8 @@
 #include <QNetworkRequest>
 #include <QNetworkReply>
 
-DownlodingSchoolXML::DownlodingSchoolXML(QUrl fileUrl, QObject *parent)
+downlodingSchoolListXml::downlodingSchoolListXml(QUrl fileUrl, QObject *parent) :
+    QObject(parent)
 {
     connect(&m_WebCtrl, SIGNAL(finished(QNetworkReply*)),
                     SLOT(fileDownloaded(QNetworkReply*)));
@@ -16,12 +17,12 @@ DownlodingSchoolXML::DownlodingSchoolXML(QUrl fileUrl, QObject *parent)
         m_WebCtrl.get(request);
     }
 
-    DownlodingSchoolXML::~DownlodingSchoolXML()
+    downlodingSchoolListXml::~downlodingSchoolListXml()
     {
 
     }
 
-    void DownlodingSchoolXML::fileDownloaded(QNetworkReply* pReply)
+    void downlodingSchoolListXml::fileDownloaded(QNetworkReply* pReply)
     {
         m_DownloadedData = pReply->readAll();
         //emit a signal
@@ -29,9 +30,8 @@ DownlodingSchoolXML::DownlodingSchoolXML(QUrl fileUrl, QObject *parent)
         emit downloaded();
     }
 
-    QByteArray DownlodingSchoolXML::downloadedData() const
+    QByteArray downlodingSchoolListXml::downloadedData() const
     {
         return m_DownloadedData;
 
-
-    }
+}

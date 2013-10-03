@@ -14,8 +14,8 @@
    <string>Dictus</string>
   </property>
   <property name="windowIcon">
-   <iconset>
-    <normaloff>Sonstige Daten/Icons/dictus.png</normaloff>Sonstige Daten/Icons/dictus.png</iconset>
+   <iconset resource="icons.qrc">
+    <normaloff>:/new/prefix1/Other/Icons/dictus.ico</normaloff>:/new/prefix1/Other/Icons/dictus.ico</iconset>
   </property>
   <property name="toolButtonStyle">
    <enum>Qt::ToolButtonTextUnderIcon</enum>
@@ -172,7 +172,7 @@
        <string>Kurswahl</string>
       </property>
       <property name="icon">
-       <iconset resource="dict.qrc">
+       <iconset resource="icons.qrc">
         <normaloff>:/new/prefix1/Other/Icons/clipboard.png</normaloff>:/new/prefix1/Other/Icons/clipboard.png</iconset>
       </property>
       <property name="iconSize">
@@ -215,7 +215,7 @@
        <string>Notenverwaltung</string>
       </property>
       <property name="icon">
-       <iconset resource="dict.qrc">
+       <iconset resource="icons.qrc">
         <normaloff>:/new/prefix1/Other/Icons/organizer.png</normaloff>:/new/prefix1/Other/Icons/organizer.png</iconset>
       </property>
       <property name="iconSize">
@@ -264,7 +264,7 @@
        <string>Einstellungen</string>
       </property>
       <property name="icon">
-       <iconset resource="dict.qrc">
+       <iconset resource="icons.qrc">
         <normaloff>:/new/prefix1/Other/Icons/gear.png</normaloff>:/new/prefix1/Other/Icons/gear.png</iconset>
       </property>
       <property name="iconSize">
@@ -1702,7 +1702,7 @@
   </customwidget>
  </customwidgets>
  <resources>
-  <include location="dict.qrc"/>
+  <include location="icons.qrc"/>
  </resources>
  <connections/>
 </ui>
